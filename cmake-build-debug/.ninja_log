@@ -1,0 +1,8 @@
+# ninja log v5
+18	600	7095967294181882	DogShelterApp_autogen/timestamp	d3b21f98ff0bad02
+18	600	7095967294181882	DogShelterApp_autogen/mocs_compilation.cpp	d3b21f98ff0bad02
+18	600	7095967294181882	C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/DogShelterApp_autogen/timestamp	d3b21f98ff0bad02
+18	600	7095967294181882	C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/DogShelterApp_autogen/mocs_compilation.cpp	d3b21f98ff0bad02
+607	702	7095967297322710	CMakeFiles/DogShelterApp.dir/DogShelterApp_autogen/mocs_compilation.cpp.obj	edd65dc104c1f982
+600	7298	7095967363240063	CMakeFiles/DogShelterApp.dir/main.cpp.obj	6ef3f0a2202b5b27
+7305	9951	7095967370918854	DogShelterApp.exe	9dd725a1d4c2781a
