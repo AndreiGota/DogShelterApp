@@ -217,7 +217,15 @@
 	"CMAKE_SOURCE_DIR" : "C:/Users/Andrei/CLionProjects/DogShelterApp",
 	"DEP_FILE" : "C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/DogShelterApp_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "DogShelterApp_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Domain/Dog.h",
+			"MU",
+			"JE6WBJKE3F/moc_Dog.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/DogShelterApp_autogen/include",
 	"MOC_COMPILATION_FILE" : "C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/DogShelterApp_autogen/mocs_compilation.cpp",
@@ -288,6 +296,11 @@
 	"SETTINGS_FILE" : "C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/DogShelterApp_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Domain/Dog.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/Andrei/CLionProjects/DogShelterApp/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

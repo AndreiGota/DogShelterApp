@@ -14,7 +14,7 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(DogShelterApp main.cpp)
+add_executable(DogShelterApp main.cpp Domain/Dog.h Domain/Dog.cpp)
 target_link_libraries(DogShelterApp
         Qt::Core
         Qt::Gui

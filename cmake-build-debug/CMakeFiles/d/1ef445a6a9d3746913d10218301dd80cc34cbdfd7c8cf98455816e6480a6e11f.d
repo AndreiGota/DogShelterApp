@@ -170,6 +170,8 @@ DogShelterApp_autogen/timestamp: \
   C:/Qt/6.5.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
   C:/Qt/6.5.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
   C:/Users/Andrei/CLionProjects/DogShelterApp/CMakeLists.txt \
+  C:/Users/Andrei/CLionProjects/DogShelterApp/Domain/Dog.cpp \
+  C:/Users/Andrei/CLionProjects/DogShelterApp/Domain/Dog.h \
   CMakeFiles/3.24.2/CMakeCCompiler.cmake \
   CMakeFiles/3.24.2/CMakeCXXCompiler.cmake \
   CMakeFiles/3.24.2/CMakeRCCompiler.cmake \
