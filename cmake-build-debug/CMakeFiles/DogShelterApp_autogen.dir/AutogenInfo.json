@@ -224,6 +224,24 @@
 			"MU",
 			"JE6WBJKE3F/moc_Dog.cpp",
 			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/RepositoryException.h",
+			"MU",
+			"3ZPKKT53DT/moc_RepositoryException.cpp",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.h",
+			"MU",
+			"3ZPKKT53DT/moc_ValidationException.cpp",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.h",
+			"MU",
+			"VK3TKBJLY3/moc_DogValidator.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -298,6 +316,21 @@
 	[
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Domain/Dog.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/RepositoryException.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.cpp",
 			"MU",
 			null
 		],

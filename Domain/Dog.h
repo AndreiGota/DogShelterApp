@@ -10,7 +10,7 @@ private:
     string breed;
     string name;
     int age;
-    string photo;
+    string photoLink;
 public:
     //Default constructor
     Dog();
@@ -34,13 +34,13 @@ public:
     string getBreed() const;
     string getName() const;
     int getAge() const;
-    string getPhoto() const;
+    string getPhotoLink() const;
 
     //Setters
     void setBreed(string newBreed);
     void setName(string newName);
     void setAge(int newAge);
-    void setPhoto(string newPhoto);
+    void setPhoto(string newPhotoLink);
 
     // Converts the Dog object to a string representation
     string toString() const;

@@ -1,14 +1,14 @@
 #include "Dog.h"
 
-Dog::Dog(): breed(""), name(""), age(-1), photo("") {
+Dog::Dog(): breed(""), name(""), age(-1), photoLink("") {
 
 }
 
-Dog::Dog(const string &breed, const string &name, int age, const string &photo): breed(breed), name(name), age(age), photo(photo) {
+Dog::Dog(const string &breed, const string &name, int age, const string &photoLink): breed(breed), name(name), age(age), photoLink(photoLink) {
 
 }
 
-Dog::Dog(const Dog &anotherDog): breed(anotherDog.breed), name(anotherDog.name), age(anotherDog.age), photo(anotherDog.photo) {
+Dog::Dog(const Dog &anotherDog): breed(anotherDog.breed), name(anotherDog.name), age(anotherDog.age), photoLink(anotherDog.photoLink) {
 
 }
 
@@ -16,7 +16,7 @@ Dog &Dog::operator=(const Dog &anotherDog) {
     this->breed = anotherDog.breed;
     this->name = anotherDog.name;
     this->age = anotherDog.age;
-    this->photo = anotherDog.photo;
+    this->photoLink = anotherDog.photoLink;
     return *this;
 }
 
@@ -38,8 +38,8 @@ int Dog::getAge() const {
     return this->age;
 }
 
-string Dog::getPhoto() const{
-    return this->photo;
+string Dog::getPhotoLink() const{
+    return this->photoLink;
 }
 
 void Dog::setBreed(std::string newBreed) {
@@ -54,19 +54,19 @@ void Dog::setAge(int newAge) {
     this->age = newAge;
 }
 
-void Dog::setPhoto(std::string newPhoto) {
-    this->photo = newPhoto;
+void Dog::setPhoto(std::string newPhotoLink) {
+    this->photoLink = newPhotoLink;
 }
 
 std::string Dog::toString() const {
     std::stringstream buffer;
     buffer << "Dog \n\t breed: " << this->breed << endl << "\t name: " << this->name << endl <<
-           "\t age: " << this->age << endl << "\t photo: " << this->photo << endl;
+           "\t age: " << this->age << endl << "\t photoLink: " << this->photoLink << endl;
     return buffer.str();
 }
 
 std::istream &operator>>(std::istream &is, Dog &dog) {
-    is >> dog.breed >> dog.name >> dog.age >> dog.photo;
+    is >> dog.breed >> dog.name >> dog.age >> dog.photoLink;
     return is;
 }
 
@@ -74,7 +74,7 @@ std::ostream &operator<<(std::ostream &os, const Dog &dog) {
     os << dog.getBreed() << endl;
     os << dog.getName() << endl;
     os << dog.getAge() << endl;
-    os << dog.getPhoto() << endl;
+    os << dog.getPhotoLink() << endl;
     return os;
 }
 
