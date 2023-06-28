@@ -250,6 +250,12 @@
 			null
 		],
 		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/HTMLRepository.h",
+			"MU",
+			"RSXGBB323P/moc_HTMLRepository.cpp",
+			null
+		],
+		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/Repository.h",
 			"MU",
 			"RSXGBB323P/moc_Repository.cpp",
@@ -354,6 +360,11 @@
 		],
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/FileRepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/HTMLRepository.cpp",
 			"MU",
 			null
 		],
