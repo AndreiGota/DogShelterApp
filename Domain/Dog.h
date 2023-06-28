@@ -40,7 +40,7 @@ public:
     void setBreed(string newBreed);
     void setName(string newName);
     void setAge(int newAge);
-    void setPhoto(string newPhotoLink);
+    void setPhotoLink(string newPhotoLink);
 
     // Converts the Dog object to a string representation
     string toString() const;

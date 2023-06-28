@@ -238,6 +238,18 @@
 			null
 		],
 		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/FileRepository.h",
+			"MU",
+			"RSXGBB323P/moc_FileRepository.cpp",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/Repository.h",
+			"MU",
+			"RSXGBB323P/moc_Repository.cpp",
+			null
+		],
+		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.h",
 			"MU",
 			"VK3TKBJLY3/moc_DogValidator.cpp",
@@ -326,6 +338,16 @@
 		],
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/FileRepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/Repository.cpp",
 			"MU",
 			null
 		],

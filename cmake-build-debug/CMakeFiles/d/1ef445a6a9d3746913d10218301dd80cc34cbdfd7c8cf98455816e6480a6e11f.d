@@ -176,6 +176,10 @@ DogShelterApp_autogen/timestamp: \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/RepositoryException.h \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.cpp \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.h \
+  C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/FileRepository.cpp \
+  C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/FileRepository.h \
+  C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/Repository.cpp \
+  C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/Repository.h \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.cpp \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.h \
   CMakeFiles/3.24.2/CMakeCCompiler.cmake \

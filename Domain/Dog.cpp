@@ -54,7 +54,7 @@ void Dog::setAge(int newAge) {
     this->age = newAge;
 }
 
-void Dog::setPhoto(std::string newPhotoLink) {
+void Dog::setPhotoLink(std::string newPhotoLink) {
     this->photoLink = newPhotoLink;
 }
 
