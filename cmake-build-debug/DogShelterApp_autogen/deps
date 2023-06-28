@@ -176,6 +176,8 @@ DogShelterApp_autogen/timestamp: \
 	C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/RepositoryException.h \
 	C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.cpp \
 	C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.h \
+	C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/CSVRepository.cpp \
+	C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/CSVRepository.h \
 	C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/FileRepository.cpp \
 	C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/FileRepository.h \
 	C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/Repository.cpp \

@@ -238,6 +238,12 @@
 			null
 		],
 		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/CSVRepository.h",
+			"MU",
+			"RSXGBB323P/moc_CSVRepository.cpp",
+			null
+		],
+		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/FileRepository.h",
 			"MU",
 			"RSXGBB323P/moc_FileRepository.cpp",
@@ -338,6 +344,11 @@
 		],
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/CSVRepository.cpp",
 			"MU",
 			null
 		],
