@@ -184,6 +184,9 @@ DogShelterApp_autogen/timestamp: \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/HTMLRepository.h \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/Repository.cpp \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/Repository.h \
+  C:/Users/Andrei/CLionProjects/DogShelterApp/Service/AdministratorService.cpp \
+  C:/Users/Andrei/CLionProjects/DogShelterApp/Service/AdministratorService.h \
+  C:/Users/Andrei/CLionProjects/DogShelterApp/Service/UndoRedo.h \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.cpp \
   C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.h \
   CMakeFiles/3.24.2/CMakeCCompiler.cmake \

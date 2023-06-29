@@ -129,6 +129,14 @@ build CMakeFiles/DogShelterApp.dir/Repository/HTMLRepository.cpp.obj: CXX_COMPIL
   OBJECT_DIR = CMakeFiles\DogShelterApp.dir
   OBJECT_FILE_DIR = CMakeFiles\DogShelterApp.dir\Repository
 
+build CMakeFiles/DogShelterApp.dir/Service/AdministratorService.cpp.obj: CXX_COMPILER__DogShelterApp_Debug C$:/Users/Andrei/CLionProjects/DogShelterApp/Service/AdministratorService.cpp || cmake_object_order_depends_target_DogShelterApp
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\DogShelterApp.dir\Service\AdministratorService.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/DogShelterApp_autogen/include -isystem C:/Qt/6.5.0/mingw_64/include/QtCore -isystem C:/Qt/6.5.0/mingw_64/include -isystem C:/Qt/6.5.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.5.0/mingw_64/include/QtGui -isystem C:/Qt/6.5.0/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\DogShelterApp.dir
+  OBJECT_FILE_DIR = CMakeFiles\DogShelterApp.dir\Service
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target DogShelterApp
@@ -137,7 +145,7 @@ build CMakeFiles/DogShelterApp.dir/Repository/HTMLRepository.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable DogShelterApp.exe
 
-build DogShelterApp.exe: CXX_EXECUTABLE_LINKER__DogShelterApp_Debug CMakeFiles/DogShelterApp.dir/DogShelterApp_autogen/mocs_compilation.cpp.obj CMakeFiles/DogShelterApp.dir/main.cpp.obj CMakeFiles/DogShelterApp.dir/Domain/Dog.cpp.obj CMakeFiles/DogShelterApp.dir/Exceptions/RepositoryException.cpp.obj CMakeFiles/DogShelterApp.dir/Exceptions/ValidationException.cpp.obj CMakeFiles/DogShelterApp.dir/Validation/DogValidator.cpp.obj CMakeFiles/DogShelterApp.dir/Repository/Repository.cpp.obj CMakeFiles/DogShelterApp.dir/Repository/FileRepository.cpp.obj CMakeFiles/DogShelterApp.dir/Repository/CSVRepository.cpp.obj CMakeFiles/DogShelterApp.dir/Repository/HTMLRepository.cpp.obj | C$:/Qt/6.5.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.5.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.5.0/mingw_64/lib/libQt6Core.a || DogShelterApp_autogen DogShelterApp_autogen_timestamp_deps
+build DogShelterApp.exe: CXX_EXECUTABLE_LINKER__DogShelterApp_Debug CMakeFiles/DogShelterApp.dir/DogShelterApp_autogen/mocs_compilation.cpp.obj CMakeFiles/DogShelterApp.dir/main.cpp.obj CMakeFiles/DogShelterApp.dir/Domain/Dog.cpp.obj CMakeFiles/DogShelterApp.dir/Exceptions/RepositoryException.cpp.obj CMakeFiles/DogShelterApp.dir/Exceptions/ValidationException.cpp.obj CMakeFiles/DogShelterApp.dir/Validation/DogValidator.cpp.obj CMakeFiles/DogShelterApp.dir/Repository/Repository.cpp.obj CMakeFiles/DogShelterApp.dir/Repository/FileRepository.cpp.obj CMakeFiles/DogShelterApp.dir/Repository/CSVRepository.cpp.obj CMakeFiles/DogShelterApp.dir/Repository/HTMLRepository.cpp.obj CMakeFiles/DogShelterApp.dir/Service/AdministratorService.cpp.obj | C$:/Qt/6.5.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.5.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.5.0/mingw_64/lib/libQt6Core.a || DogShelterApp_autogen DogShelterApp_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = C:/Qt/6.5.0/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.5.0/mingw_64/lib/libQt6Gui.a  C:/Qt/6.5.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ldcomp  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\DogShelterApp.dir

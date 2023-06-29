@@ -262,6 +262,18 @@
 			null
 		],
 		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Service/AdministratorService.h",
+			"MU",
+			"QJ36PKLCSN/moc_AdministratorService.cpp",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Service/UndoRedo.h",
+			"MU",
+			"QJ36PKLCSN/moc_UndoRedo.cpp",
+			null
+		],
+		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.h",
 			"MU",
 			"VK3TKBJLY3/moc_DogValidator.cpp",
@@ -370,6 +382,11 @@
 		],
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/Repository.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Service/AdministratorService.cpp",
 			"MU",
 			null
 		],
