@@ -232,6 +232,12 @@
 			null
 		],
 		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ServiceException.h",
+			"MU",
+			"3ZPKKT53DT/moc_ServiceException.cpp",
+			null
+		],
+		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.h",
 			"MU",
 			"3ZPKKT53DT/moc_ValidationException.cpp",
@@ -357,6 +363,11 @@
 		],
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/RepositoryException.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ServiceException.cpp",
 			"MU",
 			null
 		],

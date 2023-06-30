@@ -53,7 +53,7 @@ void DogValidator::validatePhotoLink(const string &photo) {
     string errors;
     if (photo.length() == 0)
         errors += std::string("The link input is empty!");
-    if (photo.find("www") == std::string::npos)
+    if (photo.find("https://") == std::string::npos)
         errors += std::string("The link is not a valid one!");
     if(!errors.empty())
         throw ValidationException(errors);

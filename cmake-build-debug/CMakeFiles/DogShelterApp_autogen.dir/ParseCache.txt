@@ -19,3 +19,5 @@ C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/HTMLRepository.h
 C:/Users/Andrei/CLionProjects/DogShelterApp/Repository/HTMLRepository.cpp
 C:/Users/Andrei/CLionProjects/DogShelterApp/Service/UndoRedo.h
 C:/Users/Andrei/CLionProjects/DogShelterApp/Service/AdministratorService.cpp
+C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ServiceException.h
+C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ServiceException.cpp

@@ -5,7 +5,7 @@ class UndoRedo {
 public:
     virtual void doUndo() = 0;
     virtual void doRedo() = 0;
-    virtual ~UndoRedo();
+    virtual ~UndoRedo(){};
 };
 
 class UndoRedoAdd: public UndoRedo {

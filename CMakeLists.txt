@@ -14,7 +14,7 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(DogShelterApp main.cpp Domain/Dog.h Domain/Dog.cpp Exceptions/RepositoryException.h Exceptions/RepositoryException.cpp Validation/DogValidator.h Exceptions/ValidationException.h Exceptions/ValidationException.cpp Validation/DogValidator.cpp Repository/Repository.h Repository/Repository.cpp Repository/FileRepository.h Repository/FileRepository.cpp Repository/CSVRepository.h Repository/CSVRepository.cpp Repository/HTMLRepository.h Repository/HTMLRepository.cpp Service/AdministratorService.h Service/AdministratorService.cpp Service/UndoRedo.h)
+add_executable(DogShelterApp main.cpp Domain/Dog.h Domain/Dog.cpp Exceptions/RepositoryException.h Exceptions/RepositoryException.cpp Validation/DogValidator.h Exceptions/ValidationException.h Exceptions/ValidationException.cpp Validation/DogValidator.cpp Repository/Repository.h Repository/Repository.cpp Repository/FileRepository.h Repository/FileRepository.cpp Repository/CSVRepository.h Repository/CSVRepository.cpp Repository/HTMLRepository.h Repository/HTMLRepository.cpp Service/AdministratorService.h Service/AdministratorService.cpp Service/UndoRedo.h Exceptions/ServiceException.h Exceptions/ServiceException.cpp)
 target_link_libraries(DogShelterApp
         Qt::Core
         Qt::Gui
