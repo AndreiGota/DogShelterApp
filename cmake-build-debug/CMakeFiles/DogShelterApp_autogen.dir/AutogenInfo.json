@@ -280,6 +280,12 @@
 			null
 		],
 		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Service/UserService.h",
+			"MU",
+			"QJ36PKLCSN/moc_UserService.cpp",
+			null
+		],
+		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.h",
 			"MU",
 			"VK3TKBJLY3/moc_DogValidator.cpp",
@@ -398,6 +404,11 @@
 		],
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Service/AdministratorService.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Service/UserService.cpp",
 			"MU",
 			null
 		],
