@@ -13,7 +13,7 @@ void HtmlRepository::writeToHtmlFile() {
         fout << "<tr><td>" << dog.getBreed() << "</td>"
              << "<td>" << dog.getName() << "</td>"
              << "<td>" << std::to_string(dog.getAge()) << "</td>"
-             << "<td><a href=\"" << dog.getPhotoLink() << "\">"<<dog.getPhotoLink() <<"</a></td>" << '\n';
+             << "<td><a href=\"" << dog.getSiteLink() << "\">"<<dog.getSiteLink() <<"</a></td>" << '\n';
     }
     fout << "</table></body></html>";
     fout.close();

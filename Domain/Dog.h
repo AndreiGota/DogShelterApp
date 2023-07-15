@@ -10,13 +10,13 @@ private:
     string breed;
     string name;
     int age;
-    string photoLink;
+    string siteLink;
 public:
     //Default constructor
     Dog();
 
     //Constructor with parameters
-    explicit Dog(const string& breed, const string& name, int age, const string& photo);
+    explicit Dog(const string& breed, const string& name, int age, const string& siteLink);
 
     //Copy constructor
     Dog(const Dog& anotherDog);
@@ -34,13 +34,13 @@ public:
     string getBreed() const;
     string getName() const;
     int getAge() const;
-    string getPhotoLink() const;
+    string getSiteLink() const;
 
     //Setters
     void setBreed(string newBreed);
     void setName(string newName);
     void setAge(int newAge);
-    void setPhotoLink(string newPhotoLink);
+    void setSiteLink(string newSite);
 
     // Converts the Dog object to a string representation
     string toString() const;

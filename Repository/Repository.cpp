@@ -36,7 +36,7 @@ Dog Repository::updateDogRepo(const Dog &old_dog, const Dog &new_dog) {
     this->dogList[positionOfDog].setBreed(new_dog.getBreed());
     this->dogList[positionOfDog].setName(new_dog.getName());
     this->dogList[positionOfDog].setAge(new_dog.getAge());
-    this->dogList[positionOfDog].setPhotoLink(new_dog.getPhotoLink());
+    this->dogList[positionOfDog].setSiteLink(new_dog.getSiteLink());
     return oldDog;
 }
 

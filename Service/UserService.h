@@ -26,10 +26,10 @@ public:
      * @param breed The breed of the dog.
      * @param name The name of the dog.
      * @param age The age of the dog.
-     * @param photoLink The link to the dog's photo.
+     * @param siteLink The link to the dog's siteLink.
      * @throws ServiceException if a dog with the same breed and name already exists.
      */
-    void addDogService(const string& breed, const string& name, int age, const string& photoLink);
+    void addDogService(const string& breed, const string& name, int age, const string& siteLink);
 
     /**
      * Returns the total number of dogs in the repository.

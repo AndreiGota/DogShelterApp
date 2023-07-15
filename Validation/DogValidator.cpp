@@ -49,11 +49,11 @@ void DogValidator::validateAge(int age) {
         throw ValidationException(errors);
 }
 
-void DogValidator::validatePhotoLink(const string &photo) {
+void DogValidator::validateSiteLink(const string &siteLink) {
     string errors;
-    if (photo.length() == 0)
+    if (siteLink.length() == 0)
         errors += std::string("The link input is empty!");
-    if (photo.find("https://") == std::string::npos)
+    if (siteLink.find("https://") == std::string::npos)
         errors += std::string("The link is not a valid one!");
     if(!errors.empty())
         throw ValidationException(errors);

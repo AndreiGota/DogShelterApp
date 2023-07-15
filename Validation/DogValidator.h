@@ -10,6 +10,6 @@ public:
     void validateName(const string& name);
     void validateAgeString(const string& age);
     void validateAge(int age);
-    void validatePhotoLink(const string& photo);
+    void validateSiteLink(const string& siteLink);
     ~DogValidator();
 };

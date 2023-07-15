@@ -2,12 +2,12 @@
 
 UserService::UserService(Repository &repo): repo(repo) {}
 
-void UserService::addDogService(const string &breed, const string &name, int age, const string &photoLink) {
+void UserService::addDogService(const string &breed, const string &name, int age, const string &siteLink) {
     dog_validator.validateBreed(breed);
     dog_validator.validateName(name);
     dog_validator.validateAge(age);
-    dog_validator.validatePhotoLink(photoLink);
-    Dog dogToBeAdded(breed, name, age, photoLink);
+    dog_validator.validateSiteLink(siteLink);
+    Dog dogToBeAdded(breed, name, age, siteLink);
     if (this->repo.searchByNameAndBreed(dogToBeAdded) == -1) {
         this->repo.addDogRepo(dogToBeAdded);
         undo_actions.push_back(std::make_unique<UndoRedoAdd>(this->repo, dogToBeAdded));

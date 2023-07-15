@@ -26,10 +26,10 @@ public:
      * @param breed The breed of the dog.
      * @param name The name of the dog.
      * @param age The age of the dog.
-     * @param photoLink The link to the dog's photo.
+     * @param siteLink The link to the dog's siteLink.
      * @throws ServiceException if a dog with the same breed and name already exists.
      */
-    void addDogService(const string& breed, const string& name, int age, const string& photoLink);
+    void addDogService(const string& breed, const string& name, int age, const string& siteLink);
 
     /**
      * Deletes a dog from the repository.
@@ -46,10 +46,10 @@ public:
      * @param newBreed The new breed of the dog.
      * @param newName The new name of the dog.
      * @param newAge The new age of the dog.
-     * @param newPhotoLink The new link to the dog's photo.
+     * @param newSiteLink The new link to the dog's siteLink.
      * @throws ServiceException if the dog does not exist.
      */
-    void updateDogService(const string& oldBreed, const string& oldName, const string& newBreed, const string& newName, int newAge, const string& newPhotoLink);
+    void updateDogService(const string& oldBreed, const string& oldName, const string& newBreed, const string& newName, int newAge, const string& newSiteLink);
 
     /**
      * Returns the total number of dogs in the repository.
@@ -70,11 +70,6 @@ public:
      * @return A vector of Dog objects representing the filtered dogs.
      */
     vector<Dog> getFilteredDogs(const string& breed, int age);
-
-    /**
-     * Adds 10 pre-defined dog entries to the repository.
-     */
-    void add10Entries();
 
     /**
      * Undoes the last performed action (addition, deletion, or update) on the repository.

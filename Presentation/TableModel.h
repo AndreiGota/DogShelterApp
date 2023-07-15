@@ -29,9 +29,23 @@ public:
             else if(index.column() == 2)
                 return QString::number(dog.getAge());
             else
-                return QString::fromStdString(dog.getPhotoLink());
+                return QString::fromStdString(dog.getSiteLink());
         }
         return QVariant{};
+    }
+
+    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override {
+        if (role == Qt::DisplayRole && orientation == Qt::Horizontal) {
+            if (section == 0)
+                return QString("Breed");
+            else if (section == 1)
+                return QString("Name");
+            else if (section == 2)
+                return QString("Age");
+            else if (section == 3)
+                return QString("Site Link");
+        }
+        return QVariant();
     }
 
     void set_dogs(const vector<Dog>& adoptionList) {

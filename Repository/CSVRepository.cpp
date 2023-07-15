@@ -31,7 +31,7 @@ void CSVRepository::writeToCsvFile() {
         return;
 
     for (const auto& dog: this->dogList)
-        fout << dog.getBreed() << ',' << dog.getName() << ',' << dog.getAge() << ',' << dog.getPhotoLink() << '\n';
+        fout << dog.getBreed() << ',' << dog.getName() << ',' << dog.getAge() << ',' << dog.getSiteLink() << '\n';
     fout.close();
 }
 

@@ -3,12 +3,12 @@
 
 AdminService::AdminService(Repository &repo): repo(repo) {}
 
-void AdminService::addDogService(const string &breed, const string &name, int age, const string &photoLink) {
+void AdminService::addDogService(const string &breed, const string &name, int age, const string &siteLink) {
     dog_validator.validateBreed(breed);
     dog_validator.validateName(name);
     dog_validator.validateAge(age);
-    dog_validator.validatePhotoLink(photoLink);
-    Dog dogToBeAdded(breed, name, age, photoLink);
+    dog_validator.validateSiteLink(siteLink);
+    Dog dogToBeAdded(breed, name, age, siteLink);
     if (this->repo.searchByNameAndBreed(dogToBeAdded) == -1)
         this->repo.addDogRepo(dogToBeAdded);
     else
@@ -31,7 +31,7 @@ void AdminService::deleteDogService(const string &breed, const string &name) {
 }
 
 void AdminService::updateDogService(const string &oldBreed, const string &oldName, const string &newBreed,
-                                    const string &newName, int newAge, const string &newPhotoLink) {
+                                    const string &newName, int newAge, const string &newSiteLink) {
     dog_validator.validateBreed(oldBreed);
     dog_validator.validateName(oldName);
     Dog dogToBeUpdated{oldBreed, oldName, -1, ""};
@@ -40,9 +40,9 @@ void AdminService::updateDogService(const string &oldBreed, const string &oldNam
         dog_validator.validateBreed(newBreed);
         dog_validator.validateName(newName);
         dog_validator.validateAge(newAge);
-        dog_validator.validatePhotoLink(newPhotoLink);
+        dog_validator.validateSiteLink(newSiteLink);
         Dog oldDog = this->repo.getDogsRepo()[index];
-        Dog newDog{newBreed, newName, newAge, newPhotoLink};
+        Dog newDog{newBreed, newName, newAge, newSiteLink};
         undo_actions.push_back(std::make_unique<UndoRedoUpdate>(this->repo, dogToBeUpdated, newDog));
         redo_actions.clear();
         this->repo.updateDogRepo(dogToBeUpdated, newDog);
@@ -66,19 +66,6 @@ vector<Dog> AdminService::getFilteredDogs(const string &breed, int age) {
         return (breed.empty() || dog.getBreed() == breed) && dog.getAge() < age;
     });
     return filteredDogs;
-}
-
-void AdminService::add10Entries() {
-    this->addDogService("Dachshund", "Pixie", 4, "https://dogtime.com/assets/uploads/2011/01/file_23020_dachshund-dog-breed.jpg");
-    this->addDogService("Bichon", "Toto", 5, "https://rasedecaini.ro/wp-content/uploads/2019/05/rasa-bichon-maltez.jpg");
-    this->addDogService("Pug", "Toby", 2, "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12225358/Pug-On-White-01.jpg");
-    this->addDogService("German Shepherd", "Rex", 7, "https://images.saymedia-content.com/.image/t_share/MTk2NzIzMTQ2NzMxMTAzMjUw/11-dogs-like-german-shepherd.png");
-    this->addDogService("Corgi", "Donna", 6, "https://dogtime.com/assets/uploads/gallery/pembroke-welsh-corgi-dog-breed-pictures/prance-8.jpg");
-    this->addDogService("Corgi", "Cynthia", 1, "https://i.pinimg.com/originals/51/03/d8/5103d8dcf3285e7e73b142049d252558.jpg");
-    this->addDogService("Labrador", "Charlie", 3, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqtevyTOTKqvE9uNtGEMxfEUMJglnnBT0iVg&usqp=CAU");
-    this->addDogService("Husky", "Alfie", 7, "https://highlandcanine.com/wp-content/uploads/2021/01/siberian-husky-in-the-snow.jpg");
-    this->addDogService("Pug", "Ben", 1, "https://i.pinimg.com/originals/21/cc/0e/21cc0ef668b35d78ff3e7160fd556186.jpg");
-    this->addDogService("Pomeranian", "Puffy", 1, "https://www.animalepierdute.ro/wp-content/uploads/2019/09/pomeranian-rase-de-caini.jpg");
 }
 
 void AdminService::undo() {

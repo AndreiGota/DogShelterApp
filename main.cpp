@@ -1,10 +1,24 @@
 #include <QApplication>
 #include <QPushButton>
+//#include "Presentation/GUI.h"
+#include "Repository/FileRepository.h"
+#include "Repository/HTMLRepository.h"
+#include "Repository/CSVRepository.h"
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
-    QPushButton button("Hello world!", nullptr);
-    button.resize(200, 100);
-    button.show();
+    string adminFile, userCsvFile, userHtmlFile;
+    adminFile = "dogs.txt";
+    userCsvFile = "dogs.csv";
+    userHtmlFile = "dogs.html";
+//    FileRepository repoAdmin(adminFile);
+//    AdminService serviceAdmin{repoAdmin};
+//    CSVRepository repoUserCsv{userCsvFile};
+//    HtmlRepository repoUserHtml{userHtmlFile};
+
+    //UserService serviceUserCsv{repoUserCsv};
+    //UserService serviceUserHtml{repoUserHtml};
+    //DogShelterGUI gui {serviceAdmin, serviceUserCsv, serviceUserHtml};
+    //gui.show();
     return QApplication::exec();
 }
