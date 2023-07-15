@@ -1,0 +1,14 @@
+#include "Tests.h"
+
+
+void Tests::runDomainTests(){
+    TestsDomain domainTests = TestsDomain();
+    domainTests.runDomainTests();
+}
+
+void Tests::runAllTests() {
+    this->runDomainTests();
+    //this->runValidationTests();
+    //this->runRepositoryTests();
+    //this->runServiceTests();
+}

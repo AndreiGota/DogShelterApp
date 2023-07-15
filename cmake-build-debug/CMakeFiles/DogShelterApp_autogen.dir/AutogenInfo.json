@@ -292,6 +292,18 @@
 			null
 		],
 		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Tests/TestDomain.h",
+			"MU",
+			"C2K7UQVPEK/moc_TestDomain.cpp",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Tests/Tests.h",
+			"MU",
+			"C2K7UQVPEK/moc_Tests.cpp",
+			null
+		],
+		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Validation/DogValidator.h",
 			"MU",
 			"VK3TKBJLY3/moc_DogValidator.cpp",
@@ -415,6 +427,16 @@
 		],
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Service/UserService.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Tests/TestDomain.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Tests/Tests.cpp",
 			"MU",
 			null
 		],

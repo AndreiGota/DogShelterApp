@@ -4,6 +4,7 @@
 #include "Repository/FileRepository.h"
 #include "Repository/HTMLRepository.h"
 #include "Repository/CSVRepository.h"
+#include "Tests/Tests.h"
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
@@ -11,6 +12,9 @@ int main(int argc, char *argv[]) {
     adminFile = "dogs.txt";
     userCsvFile = "dogs.csv";
     userHtmlFile = "dogs.html";
+    Tests test{};
+    test.runAllTests();
+
 //    FileRepository repoAdmin(adminFile);
 //    AdminService serviceAdmin{repoAdmin};
 //    CSVRepository repoUserCsv{userCsvFile};
