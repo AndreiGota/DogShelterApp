@@ -298,6 +298,12 @@
 			null
 		],
 		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Tests/TestRepository.h",
+			"MU",
+			"C2K7UQVPEK/moc_TestRepository.cpp",
+			null
+		],
+		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Tests/TestValidation.h",
 			"MU",
 			"C2K7UQVPEK/moc_TestValidation.cpp",
@@ -438,6 +444,11 @@
 		],
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Tests/TestDomain.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Tests/TestRepository.cpp",
 			"MU",
 			null
 		],

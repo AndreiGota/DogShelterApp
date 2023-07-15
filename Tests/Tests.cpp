@@ -1,5 +1,11 @@
 #include "Tests.h"
 
+void Tests::runAllTests() {
+    this->runDomainTests();
+    this->runValidationTests();
+    this->runRepositoryTests();
+    //this->runServiceTests();
+}
 
 void Tests::runDomainTests(){
     TestsDomain domainTests = TestsDomain();
@@ -10,11 +16,9 @@ void Tests::runValidationTests() {
     TestsValidation validationTests = TestsValidation();
     validationTests.runValidationTests();
 }
-
-void Tests::runAllTests() {
-    this->runDomainTests();
-    this->runValidationTests();
-    //this->runRepositoryTests();
-    //this->runServiceTests();
+void Tests::runRepositoryTests() {
+    TestsRepository repositoryTests = TestsRepository();
+    repositoryTests.runRepositoryTests();
 }
+
 

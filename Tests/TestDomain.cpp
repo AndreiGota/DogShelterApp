@@ -1,4 +1,3 @@
-#include "../Domain/Dog.h"
 #include "TestDomain.h"
 #include <cassert>
 

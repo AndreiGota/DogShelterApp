@@ -1,4 +1,5 @@
 #pragma once
+#include "../Domain/Dog.h"
 
 class TestsDomain{
 private:
