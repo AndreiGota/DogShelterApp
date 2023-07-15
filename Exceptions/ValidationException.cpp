@@ -1,8 +1,7 @@
 #include "ValidationException.h"
 
-ValidationException::ValidationException(const string &errorMessage): errorMessage(errorMessage) {
-
-}
+ValidationException::ValidationException(const std::string& errorMessage)
+        : errorMessage(errorMessage) {}
 
 const string &ValidationException::getErrorMessage() const {
     return this->errorMessage;

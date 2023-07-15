@@ -1,7 +1,6 @@
 #include "../Domain/Dog.h"
 #include "TestDomain.h"
 #include <cassert>
-#include <iostream>
 
 void TestsDomain::runDomainTests() {
     this->testImplicitConstructor();

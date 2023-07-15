@@ -6,9 +6,15 @@ void Tests::runDomainTests(){
     domainTests.runDomainTests();
 }
 
+void Tests::runValidationTests() {
+    TestsValidation validationTests = TestsValidation();
+    validationTests.runValidationTests();
+}
+
 void Tests::runAllTests() {
     this->runDomainTests();
-    //this->runValidationTests();
+    this->runValidationTests();
     //this->runRepositoryTests();
     //this->runServiceTests();
 }
+
