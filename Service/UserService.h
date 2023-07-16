@@ -32,8 +32,8 @@ public:
     void addDogService(const string& breed, const string& name, int age, const string& siteLink);
 
     /**
-     * Returns the total number of dogs in the repository.
-     * @return The number of dogs in the repository.
+     * Returns the total number of adoptedDogs in the repository.
+     * @return The number of adoptedDogs in the repository.
      */
     int getLengthAllDogs();
 
@@ -44,7 +44,7 @@ public:
     string getDisplayCommand();
 
     /**
-     * Retrieves the list of dogs available for adoption from the repository
+     * Retrieves the list of adoptedDogs available for adoption from the repository
      * @return A vector of Dog objects representing the adoption list
      */
     vector<Dog> getAdoptionList();

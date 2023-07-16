@@ -4,7 +4,7 @@ void Tests::runAllTests() {
     this->runDomainTests();
     this->runValidationTests();
     this->runRepositoryTests();
-    //this->runServiceTests();
+    this->runServiceTests();
 }
 
 void Tests::runDomainTests(){
@@ -19,6 +19,11 @@ void Tests::runValidationTests() {
 void Tests::runRepositoryTests() {
     TestsRepository repositoryTests = TestsRepository();
     repositoryTests.runRepositoryTests();
+}
+
+void Tests::runServiceTests() {
+    TestsService serviceTests = TestsService();
+    serviceTests.runServiceTests();
 }
 
 
