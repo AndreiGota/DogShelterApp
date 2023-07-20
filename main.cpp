@@ -5,13 +5,24 @@
 #include "Tests/Tests.h"
 #include "Service/AdministratorService.h"
 #include "Service/UserService.h"
+#include "Presentation/GUI.h"
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     string adminFile, userCsvFile, userHtmlFile;
-    adminFile = "C:\\Users\\Andrei\\Downloads\\dogs.txt";
-    userCsvFile = "C:\\Users\\Andrei\\Downloads\\dogs.csv";
-    userHtmlFile = "C:\\Users\\Andrei\\Downloads\\dogs.html";
+    adminFile = "C:/Users/Andrei/CLionProjects/DogShelterApp/dogs.txt";
+    userCsvFile = "C:/Users/Andrei/CLionProjects/DogShelterApp/dogs.csv";
+    userHtmlFile = "C:/Users/Andrei/CLionProjects/DogShelterApp/dogs.html";
     Tests test{};
     test.runAllTests();
+    FileRepository repoAdmin(adminFile);
+    AdminService serviceAdmin{repoAdmin};
+    CSVRepository repoUserCsv{userCsvFile};
+    HtmlRepository repoUserHtml{userHtmlFile};
+    UserService serviceUserCsv{repoUserCsv};
+    UserService serviceUserHtml{repoUserHtml};
+    DogShelterGUI gui {serviceAdmin, serviceUserCsv, serviceUserHtml};
+    gui.setWindowState(Qt::WindowMaximized);
+    gui.show();
+    return a.exec();
 }

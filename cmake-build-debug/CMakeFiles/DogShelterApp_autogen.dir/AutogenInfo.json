@@ -244,6 +244,18 @@
 			null
 		],
 		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Presentation/GUI.h",
+			"MU",
+			"HYOVSDH2YP/moc_GUI.cpp",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Presentation/PictureDelegate.h",
+			"MU",
+			"HYOVSDH2YP/moc_PictureDelegate.cpp",
+			null
+		],
+		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Presentation/TableModel.h",
 			"MU",
 			"HYOVSDH2YP/moc_TableModel.cpp",
@@ -415,6 +427,21 @@
 		],
 		[
 			"C:/Users/Andrei/CLionProjects/DogShelterApp/Exceptions/ValidationException.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Presentation/GUI.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Presentation/PictureDelegate.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Andrei/CLionProjects/DogShelterApp/Presentation/TableModel.cpp",
 			"MU",
 			null
 		],
