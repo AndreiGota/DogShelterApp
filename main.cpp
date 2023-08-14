@@ -10,9 +10,9 @@
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     string adminFile, userCsvFile, userHtmlFile;
-    adminFile = "C:/Users/Andrei/CLionProjects/DogShelterApp/dogs.txt";
-    userCsvFile = "C:/Users/Andrei/CLionProjects/DogShelterApp/dogs.csv";
-    userHtmlFile = "C:/Users/Andrei/CLionProjects/DogShelterApp/dogs.html";
+    adminFile = "dogs.txt";
+    userCsvFile = "dogs.csv";
+    userHtmlFile = "dogs.html";
     Tests test{};
     test.runAllTests();
     FileRepository repoAdmin(adminFile);
@@ -24,5 +24,5 @@ int main(int argc, char *argv[]) {
     DogShelterGUI gui {serviceAdmin, serviceUserCsv, serviceUserHtml};
     gui.setWindowState(Qt::WindowMaximized);
     gui.show();
-    return a.exec();
+    return QApplication::exec();
 }
