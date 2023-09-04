@@ -13,8 +13,10 @@ void AdminService::addDogService(const string &breed, const string &name, int ag
         this->repo.addDogRepo(dogToBeAdded);
     else
         throw ServiceException("Dog with this breed and name already exists!\n");
-    undo_actions.push_back(std::make_unique<UndoRedoAdd>(this->repo, dogToBeAdded));
-    redo_actions.clear();
+    undo_actions.push(std::make_unique<UndoRedoAdd>(this->repo, dogToBeAdded));
+    while (!redo_actions.empty())
+        redo_actions.pop();
+    //redo_actions.clear();
 }
 
 void AdminService::deleteDogService(const string &breed, const string &name) {
@@ -25,7 +27,7 @@ void AdminService::deleteDogService(const string &breed, const string &name) {
     if (index != -1) {
         Dog actualDog = this->repo.getDogsRepo()[index];
         this->repo.deleteDogRepo(dogToBeDeleted);
-        undo_actions.push_back(std::make_unique<UndoRedoDelete>(this->repo, actualDog));
+        undo_actions.push(std::make_unique<UndoRedoDelete>(this->repo, actualDog));
     } else
         throw ServiceException("Dog does not exist!\n");
 }
@@ -43,8 +45,10 @@ void AdminService::updateDogService(const string &oldBreed, const string &oldNam
         dog_validator.validateSiteLink(newSiteLink);
         Dog oldDog = this->repo.getDogsRepo()[index];
         Dog newDog{newBreed, newName, newAge, newSiteLink};
-        undo_actions.push_back(std::make_unique<UndoRedoUpdate>(this->repo, dogToBeUpdated, newDog));
-        redo_actions.clear();
+        undo_actions.push(std::make_unique<UndoRedoUpdate>(this->repo, dogToBeUpdated, newDog));
+        while (!redo_actions.empty())
+            redo_actions.pop();
+        //redo_actions.clear();
         this->repo.updateDogRepo(dogToBeUpdated, newDog);
     }
     else
@@ -69,19 +73,23 @@ vector<Dog> AdminService::getFilteredDogs(const string &breed, int age) {
 }
 
 void AdminService::undo() {
-    if (undo_actions.empty())
+    if (undo_actions.empty()) {
         throw ServiceException("Can't undo!\n");
-    undo_actions[undo_actions.size() - 1]->doUndo();
-    redo_actions.push_back(std::move(undo_actions[undo_actions.size() - 1]));
-    undo_actions.pop_back();
+    }
+    auto action = std::move(undo_actions.top());
+    undo_actions.pop();
+    action->doUndo();
+    redo_actions.push(std::move(action));
 }
 
 void AdminService::redo() {
-    if(redo_actions.empty())
+    if (redo_actions.empty()) {
         throw ServiceException("Can't redo!\n");
-    redo_actions.back()->doRedo();
-    undo_actions.push_back(std::move(redo_actions[redo_actions.size() - 1]));
-    redo_actions.pop_back();
+    }
+    auto action = std::move(redo_actions.top());
+    redo_actions.pop();
+    action->doRedo();
+    undo_actions.push(std::move(action));
 }
 
 AdminService::~AdminService() = default;

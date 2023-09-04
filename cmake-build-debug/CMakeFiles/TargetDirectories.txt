@@ -1,5 +1,4 @@
-C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/DogShelterApp.dir
-C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/DogShelterApp_autogen_timestamp_deps.dir
-C:/Users/Andrei/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/DogShelterApp_autogen.dir
+C:/Users/Lenovo/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/DogShelterApp.dir
+C:/Users/Lenovo/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Lenovo/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Lenovo/CLionProjects/DogShelterApp/cmake-build-debug/CMakeFiles/DogShelterApp_autogen.dir

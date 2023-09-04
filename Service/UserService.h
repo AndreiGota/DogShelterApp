@@ -5,6 +5,7 @@
 #include "../Exceptions/ServiceException.h"
 #include "UndoRedo.h"
 #include "memory"
+#include "stack"
 
 using std::unique_ptr;
 
@@ -12,8 +13,8 @@ class UserService {
 private:
     Repository& repo;
     DogValidator dog_validator;
-    vector<unique_ptr<UndoRedo>> undo_actions;
-    vector<unique_ptr<UndoRedo>> redo_actions;
+    std::stack<unique_ptr<UndoRedo>> undo_actions;
+    std::stack<unique_ptr<UndoRedo>> redo_actions;
 public:
     /**
      * Constructor for UserService class.

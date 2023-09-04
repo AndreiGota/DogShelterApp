@@ -10,8 +10,10 @@ void UserService::addDogService(const string &breed, const string &name, int age
     Dog dogToBeAdded(breed, name, age, siteLink);
     if (this->repo.searchByNameAndBreed(dogToBeAdded) == -1) {
         this->repo.addDogRepo(dogToBeAdded);
-        undo_actions.push_back(std::make_unique<UndoRedoAdd>(this->repo, dogToBeAdded));
-        redo_actions.clear();
+        undo_actions.push(std::make_unique<UndoRedoAdd>(this->repo, dogToBeAdded));
+        while (!redo_actions.empty())
+            redo_actions.pop();
+        //redo_actions.clear();
     } else
         throw ServiceException("Dog already exists");
 }
@@ -29,19 +31,23 @@ vector<Dog> UserService::getAdoptionList() {
 }
 
 void UserService::undo() {
-    if(undo_actions.empty())
+    if (undo_actions.empty()) {
         throw ServiceException("Can't undo!\n");
-    undo_actions[undo_actions.size() - 1]->doUndo();
-    redo_actions.push_back(std::move(undo_actions[undo_actions.size() - 1]));
-    undo_actions.pop_back();
+    }
+    auto action = std::move(undo_actions.top());
+    undo_actions.pop();
+    action->doUndo();
+    redo_actions.push(std::move(action));
 }
 
 void UserService::redo() {
-    if(redo_actions.empty())
+    if (redo_actions.empty()) {
         throw ServiceException("Can't redo!\n");
-    redo_actions.back()->doRedo();
-    undo_actions.push_back(std::move(redo_actions[redo_actions.size() - 1]));
-    redo_actions.pop_back();
+    }
+    auto action = std::move(redo_actions.top());
+    redo_actions.pop();
+    action->doRedo();
+    undo_actions.push(std::move(action));
 }
 
 UserService::~UserService() = default;
