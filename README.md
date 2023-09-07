@@ -21,4 +21,14 @@ The adoption list can be stored in HTML or CSV format.
 ## Project Screenshots
  ### Choose the application mode window:
  <p align="center"> <img src="https://github.com/AndreiGota/DogShelterApp/blob/main/Project%20Screenshots/Screenshot%20204223.png" height="500"/> </p>
+
+ ### Admin mode window:
+ <p align="center"> <img src="https://github.com/AndreiGota/DogShelterApp/blob/main/Project%20Screenshots/Screenshot%20204527.png" height="500"/> </p>
+
+ ### User mode window
+  <p align="center"> <img src="https://github.com/AndreiGota/DogShelterApp/blob/main/Project%20Screenshots/Screenshot%20204854.png" height="500"/> </p>
+
+ ### Adoption list displayed externally, in ```HTML``` format in this case:
+  <p align="center"> <img src="https://github.com/AndreiGota/DogShelterApp/blob/main/Project%20Screenshots/Screenshot%20205203.png" height="500"/> </p>
+ 
  
