@@ -54,6 +54,7 @@ private:
     QPushButton* revertButton;
     QPushButton* buttonAdmin;
     QPushButton* buttonUser;
+    QPushButton* exitApp;
     QPushButton* updateButtonUpdate;
     QPushButton* buttonCsv;
     QPushButton* buttonHtml;

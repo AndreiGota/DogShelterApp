@@ -4,6 +4,8 @@
 #include <QFormLayout>
 #include <QLabel>
 #include <QHeaderView>
+#include <QMainWindow>
+
 
 void DogShelterGUI::initGui() {
     mainMode();
@@ -26,16 +28,21 @@ void DogShelterGUI::mainMode() {
 }
 
 void DogShelterGUI::chooseMode(QVBoxLayout *mainLayout, QFont f) {
-    QWidget* chooseMode = new QWidget{};
-    QHBoxLayout* layoutMode = new QHBoxLayout{};
     buttonAdmin = new QPushButton{"Admin Mode"};
     buttonUser = new QPushButton{"User Mode"};
+    exitApp = new QPushButton{"Exit"};
+
     buttonAdmin->setFont(f);
     buttonUser->setFont(f);
-    layoutMode->addWidget(buttonAdmin);
-    layoutMode->addWidget(buttonUser);
-    chooseMode->setLayout(layoutMode);
-    mainLayout->addWidget(chooseMode);
+    exitApp->setFont(f);
+
+    buttonAdmin->setStyleSheet("margin: 0; padding: 0;");
+    buttonUser->setStyleSheet("margin: 0; padding: 0;");
+    exitApp->setStyleSheet("margin: 0; padding: 0;");
+
+    mainLayout->addWidget(buttonAdmin);
+    mainLayout->addWidget(buttonUser);
+    mainLayout->addWidget(exitApp);
 }
 
 void DogShelterGUI::adminMode() {
@@ -412,6 +419,10 @@ void DogShelterGUI::connectSignalsAndSlots() {
         this->chooseRepo->setWindowState(Qt::WindowMaximized);
         this->chooseRepo->show();
     });
+    QObject::connect(exitApp, &QPushButton::clicked, this, &QMainWindow::close);
+
+
+
     QObject::connect(updateButton, &QPushButton::clicked,this,[=](){
         this->updateWidget->setWindowState(Qt::WindowMaximized);
         this->updateWidget->show();
