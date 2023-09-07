@@ -17,3 +17,8 @@ The adoption list can be stored in HTML or CSV format.
 ## Design Patterns Used
 - ```Model-View-Controller``` for displaying the adoption list in the table, the photos being shown using QT delegates
 - ```Command``` design pattern, used for the undo/redo functionality
+
+## Project Screenshots
+ ### Choose the application mode window:
+ <p align="center"> <img src="https://github.com/AndreiGota/DogShelterApp/blob/main/Project%20Screenshots/Screenshot%20204223.png" height="500"/> </p>
+ 
