@@ -8,7 +8,7 @@ void HtmlRepository::writeToHtmlFile() {
 
     fout << "<!DOCTYPE html>\n<html><head><title>Adoption List</title></head><body>\n";
     fout << "<table border=\"1\">\n";
-    fout << "<tr><td>Breed</td><td>Name</td><td>Age</td><td>Link</td></tr>\n";
+    fout << "<tr><td>Breed</td><td>Name</td><td>Age</td><td>SiteLink</td></tr>\n";
     for (const Dog& dog: this->dogList) {
         fout << "<tr><td>" << dog.getBreed() << "</td>"
              << "<td>" << dog.getName() << "</td>"

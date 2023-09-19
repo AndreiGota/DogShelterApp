@@ -16,7 +16,6 @@ void AdminService::addDogService(const string &breed, const string &name, int ag
     undo_actions.push(std::make_unique<UndoRedoAdd>(this->repo, dogToBeAdded));
     while (!redo_actions.empty())
         redo_actions.pop();
-    //redo_actions.clear();
 }
 
 void AdminService::deleteDogService(const string &breed, const string &name) {
@@ -48,7 +47,6 @@ void AdminService::updateDogService(const string &oldBreed, const string &oldNam
         undo_actions.push(std::make_unique<UndoRedoUpdate>(this->repo, dogToBeUpdated, newDog));
         while (!redo_actions.empty())
             redo_actions.pop();
-        //redo_actions.clear();
         this->repo.updateDogRepo(dogToBeUpdated, newDog);
     }
     else

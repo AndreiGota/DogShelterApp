@@ -53,22 +53,22 @@ public:
     void updateDogService(const string& oldBreed, const string& oldName, const string& newBreed, const string& newName, int newAge, const string& newSiteLink);
 
     /**
-     * Returns the total number of adoptedDogs in the repository.
-     * @return The number of adoptedDogs in the repository.
+     * Returns the total number of dogs in the repository.
+     * @return The number of dogs in the repository.
      */
     int getLengthAllDogs();
 
     /**
-     * Returns a vector containing all the adoptedDogs in the repository.
-     * @return A vector of Dog objects representing all the adoptedDogs in the repository.
+     * Returns a vector containing all the dogs in the repository.
+     * @return A vector of Dog objects representing all the dogs in the repository.
      */
     vector<Dog> getAllDogs();
 
     /**
-     * Returns a vector containing the adoptedDogs that match the given breed and age criteria.
-     * @param breed The breed of the adoptedDogs to filter by. If empty, all breeds are considered.
-     * @param age The maximum age of the adoptedDogs to filter by. Dogs with an age less than this value are included.
-     * @return A vector of Dog objects representing the filtered adoptedDogs.
+     * Returns a vector containing the dogs that match the given breed and age criteria.
+     * @param breed The breed of the dogs to filter by. If empty, all breeds are considered.
+     * @param age The maximum age of the dogs to filter by. Dogs with an age less than this value are included.
+     * @return A vector of Dog objects representing the filtered dogs.
      */
     vector<Dog> getFilteredDogs(const string& breed, int age);
 

@@ -13,7 +13,6 @@ void UserService::addDogService(const string &breed, const string &name, int age
         undo_actions.push(std::make_unique<UndoRedoAdd>(this->repo, dogToBeAdded));
         while (!redo_actions.empty())
             redo_actions.pop();
-        //redo_actions.clear();
     } else
         throw ServiceException("Dog already exists");
 }

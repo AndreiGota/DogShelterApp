@@ -41,9 +41,9 @@ public:
     // - The updated Dog object
     virtual Dog updateDogRepo(const Dog& old_dog, const Dog& new_dog);
 
-    // Retrieves the number of adoptedDogs in the repository
+    // Retrieves the number of dogs in the repository
     // Returns:
-    // - The number of adoptedDogs in the repository
+    // - The number of dogs in the repository
     int getNrDogsRepo();
 
     // Retrieves a reference to the vector of adoptedDogs in the repository
