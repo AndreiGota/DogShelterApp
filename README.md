@@ -17,3 +17,22 @@ The adoption list can be stored in HTML or CSV format.
 ## Design Patterns Used
 - ```Model-View-Controller``` for displaying the adoption list in the table, the photos being shown using QT delegates
 - ```Command``` design pattern, used for the undo/redo functionality
+
+## Other Application Features
+- Letting the user select the application mode (```user``` or ```admin```) and, if ```user``` is chosen, what type of adoption list is wanted (```CSV``` or ```HTML```) at launch.
+- Undo and Redo functionality for the features related to managing dogs and adopting dogs. These also work with the usual key combinations (```CTRL - Z``` and ```CTRL - Y```).
+
+## Project Screenshots
+ ### Choose the application mode window:
+ <p align="center"> <img src="https://github.com/AndreiGota/DogShelterApp/blob/main/Project%20Screenshots/Screenshot%20204223.png" height="500"/> </p>
+
+ ### Admin mode window:
+ <p align="center"> <img src="https://github.com/AndreiGota/DogShelterApp/blob/main/Project%20Screenshots/Screenshot%20204527.png" height="500"/> </p>
+
+ ### User mode window
+  <p align="center"> <img src="https://github.com/AndreiGota/DogShelterApp/blob/main/Project%20Screenshots/Screenshot%20204854.png" height="500"/> </p>
+
+ ### Adoption list displayed externally, in ```HTML``` format in this case:
+  <p align="center"> <img src="https://github.com/AndreiGota/DogShelterApp/blob/main/Project%20Screenshots/Screenshot%20205203.png" height="300"/> </p>
+ 
+ 
