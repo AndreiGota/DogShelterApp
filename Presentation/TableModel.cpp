@@ -1,6 +1,8 @@
 #include "TableModel.h"
 
-DogTableModel::DogTableModel(vector<Dog> dogs): adoptedDogs(dogs) {
+#include <utility>
+
+DogTableModel::DogTableModel(vector<Dog> dogs): adoptedDogs(std::move(dogs)) {
 
 }
 
